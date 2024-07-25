@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="index.html">SANTI</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CONTENIDO</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">CUADERNO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">FRASE</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido">
+            <div class="introduccion">
+                <div class="contenido-introduccion">
+                    <h2 class="intro">Introducción</h2>
+                    <p>Bienvenido al curso de Desarrollo de Aplicaciones Web. Este curso está diseñado para proporcionarte las habilidades y conocimientos necesarios para crear aplicaciones web modernas y dinámicas. A lo largo de este curso, aprenderás sobre tecnologías front-end y back-end, y cómo integrarlas para desarrollar aplicaciones completas y funcionales.</p>
+                    <p>Empezaremos con los conceptos básicos de HTML, CSS y JavaScript, y luego avanzaremos hacia frameworks y herramientas más avanzadas como React, Node.js y bases de datos. Al final del curso, tendrás la capacidad de construir y desplegar tu propia aplicación web.</p>
+                </div>
+            </div>
+            <div class="contenido-banner">
+                <div class="contenedor-img">
+                    <img src="img/perfil.jpg" alt="Foto de perfil de Jose Santivañez">
+                </div>
+                <h1>JOSE SANTIVAÑEZ</h1>
+                <h2>Estudiante de Ingeniería de Sistemas</h2>
+                <div class="redes">
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <style>
+        .contenido {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            height: 100vh; /* Para asegurar que las divs ocupen toda la altura de la pantalla */
+        }
+        .introduccion {
+            flex: 1;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .contenido-introduccion {
+            text-align: justify;
+        }
+        .contenedor-img img {
+            width: 150px;
+            border-radius: 50%;
+        }
+        .redes a {
+            margin: 0 10px;
+        }
+        .intro {
+            text-align: center;
+        }
+    </style>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p class="justificado"><span>Hola, soy Jose Alonzo Santivañez Santa Cruz. </span>Estudiante de Ingeniería de Sistemas. Me apasiona la tecnología y estoy muy interesado en desarrollar mis habilidades en el campo de la programación y el análisis de sistemas. Mi objetivo es seguir creciendo profesionalmente en el campo de la programación y los sistemas, aportando valor con mis conocimientos y buscando oportunidades de aprendizaje continuo.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Nacimiento:</strong>
+                            05-07-2001
+                        </li>
+                        <li>
+                            <strong>Teléfono:</strong>
+                            (+51) 997 264 606
+                        </li>
+                        <li>
+                            <strong>Email:</strong>
+                            josesantivanez9@gmail.com
+                        </li>
+                        <li>
+                            <strong>Website:</strong>
+                            www.example.com
+                        </li>
+                        <li>
+                            <strong>Dirección:</strong>
+                            Jr. Oriente Km. 1, Concepción - Perú
+                        </li>
+                        <li>
+                            <strong>Cargo:</strong>
+                            <span>FREELANCE</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-film"></i>
+                            <span>PELICULAS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-futbol"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>AUTOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-code"></i>
+                            <span>PROGRAM</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>89%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Java</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Python</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>81%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>SQL</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>78%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Adaptabilidad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>99%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Liderazgo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>94%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>CONTENIDO</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3></h3><!--Lado derecho-->
+                    <div class="item izq">
+                        <h4>SEMANA 1</h4>
+                        <span class="casa">TECNOLOGÍAS WEB</span>
+                        <span class="fecha"></span>
+                        <p class="justificado">Las tecnologías web son el conjunto de herramientas, lenguajes y protocolos que permiten la creación, desarrollo y funcionamiento de aplicaciones y sitios web. A continuación, se desglosan los componentes fundamentales de estas tecnologías.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>SEMANA 2</h4>
+                        <span class="casa">ESTRUCTURA HTML Y XML</span>
+                        <span class="fecha"></span>
+                        <p class="justificado">HTML (HyperText Markup Language) y XML (eXtensible Markup Language) son lenguajes de marcado utilizados para estructurar y transportar datos en la web. HTML se centra en la presentación de datos para su visualización en navegadores web, mientras que XML se utiliza principalmente para almacenar y transportar datos de manera estructurada y legible tanto para humanos como para máquinas.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>SEMANA 3</h4>
+                        <span class="casa">FRONT-END CON LIBRERÍAS</span>
+                        <span class="fecha"></span>
+                        <p class="justificado">En el panorama del desarrollo web front-end, las librerías de estilo como CSS, Bootstrap y Tailwind juegan roles cruciales al definir la apariencia y la interactividad de las páginas web. CSS, siendo el lenguaje fundamental de estilo, ofrece una flexibilidad total para la personalización de la presentación. Bootstrap, por otro lado, proporciona un conjunto completo de componentes y estilos predefinidos, lo que agiliza el proceso de desarrollo y garantiza una apariencia consistente en todas las páginas. Tailwind, con su enfoque basado en clases, permite una personalización detallada y modular, facilitando la creación de interfaces web altamente personalizadas.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>SEMANA 4</h4>
+                        <span class="casa">FRONT-END CON JAVASCRIPT</span>
+                        <span class="fecha"></span>
+                        <p class="justificado">JavaScript es un lenguaje de programación utilizado principalmente para crear contenido interactivo en páginas web. Es un componente esencial del desarrollo front-end, permitiendo la manipulación dinámica de elementos HTML, interacciones del usuario y comunicación con servidores.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3></h3><!--lado izquierdo-->
+                    <div class="item der">
+                        <h4>SEMANA 5</h4>
+                        <span class="casa">NODE.JS</span>
+                        <span class="fecha"></span>
+                        <p class="justificado">Node.js es un entorno de ejecución de JavaScript del lado del servidor que utiliza el motor V8 de Google Chrome. Permite a los desarrolladores crear aplicaciones web altamente escalables y de alto rendimiento utilizando JavaScript en el lado del servidor.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>SEMANA 6</h4>
+                        <span class="casa">REACT</span>
+                        <span class="fecha"></span>
+                        <p class="justificado">React es una biblioteca de JavaScript de código abierto utilizada para construir interfaces de usuario interactivas y reutilizables. Desarrollada por Facebook, React se destaca por su enfoque en la creación de componentes reutilizables y su eficiencia en la actualización del DOM.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>SEMANA 10</h4>
+                        <span class="casa">HOOKS</span>
+                        <span class="fecha"></span>
+                        <p class="justificado">Los Hooks son una característica introducida en React 16.8 que revolucionó la forma en que manejamos el estado y los efectos en componentes funcionales. Antes de los Hooks, necesitábamos usar clases para acceder al estado y a los ciclos de vida de React. Con los Hooks, podemos hacerlo directamente en componentes de función.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>SEMANA 11</h4>
+                        <span class="casa">NEXT. JS</span>
+                        <span class="fecha"></span>
+                        <p class="justificado">Next.js es un framework de React que ofrece optimizaciones incorporadas, enrutamiento avanzado y soporte CSS. Es ideal para construir aplicaciones web de alta calidad.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>SEMANA 12</h4>
+                        <span class="casa">JavaServer Pages (JSP)</span>
+                        <span class="fecha"></span>
+                        <p class="justificado">JSP es una tecnología basada en Java para crear páginas web dinámicas en el servidor. Permite separar la lógica de negocio del HTML generado.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CUADERNO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>CUADERNO</h2>
+            <p class="justificado"><span>¡Bienvenido al Cuaderno Personal semanal!</span> Este cuaderno personal muestra el conocimiento ganado a lo largo de las semanas con temas relevantes, definiciones clave, procedimientos detallados y resultados obtenidos. Para poder observar lo realizado en cada semana solo es necesario darle un <span>!Click¡</span> a las imágenes que aparecen a continuación:</p>
+
+            <div class="galeria">
+                <div class="proyecto">
+                    <a href="semanas/semana1.html" class="semalink">
+                        <img src="img/s1.jpg" alt="">
+                        <div class="overlay">
+                            <h3>Técnologías Web</h3>
+                            <p>Semana 1</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="proyecto">
+                    <a href="semanas/semana2.html" class="semalink">
+                        <img src="img/s2.jpg" alt="">
+                        <div class="overlay">
+                            <h3>Estructura HTML y XML</h3>
+                            <p>Semana 2</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="proyecto">
+                    <a href="semanas/semana3.html" class="semalink">
+                        <img src="img/s3.jpg" alt="">
+                        <div class="overlay">
+                            <h3>Front-End con Librerías</h3>
+                            <p>Semana 3</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="proyecto">
+                    <a href="semanas/semana4.html" class="semalink">
+                        <img src="img/s4.jpg" alt="">
+                        <div class="overlay">
+                            <h3>Front-End con JavaScript</h3>
+                            <p>Semana 4</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="proyecto">
+                    <a href="semanas/semana5.html" class="semalink">
+                        <img src="img/s5.jpg" alt="">
+                        <div class="overlay">
+                            <h3>Node.js</h3>
+                            <p>Semana 5</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="proyecto">
+                    <a href="semanas/semana6.html" class="semalink">
+                        <img src="img/s6.jpg" alt="">
+                        <div class="overlay">
+                            <h3>React</h3>
+                            <p>Semana 6</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="proyecto">
+                    <a href="semanas/semana10.html" class="semalink">
+                        <img src="img/s2.jpg" alt="">
+                        <div class="overlay">
+                            <h3>Hooks</h3>
+                            <p>Semana 10</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="proyecto">
+                    <a href="semanas/semana11.html" class="semalink">
+                        <img src="img/s1.jpg" alt="">
+                        <div class="overlay">
+                            <h3>Next JS</h3>
+                            <p>Semana 11</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="proyecto">
+                    <a href="semanas/semana12.html" class="semalink">
+                        <img src="img/s3.jpg" alt="">
+                        <div class="overlay">
+                            <h3>JavaServer Pages (JSP)</h3>
+                            <p>Semana 12</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>FRASE</h2>
+            <p class="frase"><samp>"Tejiendo sueños en el lenguaje de las máquinas, entre el brillo de los circuitos y el susurro de los algoritmos, creamos puentes hacia el mañana digital"</samp></p>
+            <p class="justificado">Esta frase encapsula la labor poética y esencial de un ingeniero de sistemas. Evoca la idea de transformar ideas en realidad a través del código y la tecnología, representando la belleza y la complejidad de su trabajo con términos como "circuitos brillantes" y "susurro de los algoritmos". Además, resalta su papel crucial en la construcción de un futuro digital, actuando como arquitectos que conectan el presente con el mañana mediante la creación de soluciones innovadoras y avanzadas.</p>
+            
+            
+            
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <p>Copyright <i class="fa-regular fa-copyright"></i> 2024 - SANTI</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
